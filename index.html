@@ -9,17 +9,19 @@
     <title>Delicioso Turon Pares</title>
 </head>
 <body>
-    <div id="f-div" class="f-div">
-        <div class="nav-sec">
+    <div id="f-div">
+        <div class="f-div">
             <nav>
-                <ul class="f-ul">
-                    <li class="f-li"><a href="#f-div">Home</a></li>
-                    <li class="f-li"><a href="#s-div">About Us</a></li>
-                    <li class="f-li"><a href="#t-div">Products</a></li>
-                    <li class="f-li"><a href="#fo-div">Reviews</a></li>
-                    <li class="f-li"><a href="#fi-div">Our Team</a></li>
-                    <li class="f-li"><a href="#si-div">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#f-div">Home</a></li>
+                    <li><a href="#s-div">About Us</a></li>
+                    <li><a href="#t-div">Products</a></li>
+                    <li><a href="#fo-div">Reviews</a></li>
+                    <li><a href="#fi-div">Our Team</a></li>
+                    <li><a href="#si-div">Contact Us</a></li>
+                    <i class="fas fa-x" onclick="closemenu()"></i>
                 </ul>
+                <i id="fas1" class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
         </div>
 
@@ -49,26 +51,36 @@
         </div>
     </div>
 
-    <div id="t-div" class="t-div">
-        <div class="caption">Products</div>
-        <div class="container1">
-            <div class="container">
-                <div class="box1">
-                    <img src="img/turon .jpg">
-                    <a href="#" class="t-btn">INGREDIENTS</a>
-                    <p class="caption1">Kamote - Saging Turon</p>
-                </div>
-    
-                <div class="box2">
+    <div id="t-div">
+        <div class="t-div">
+            <h1 class="caption">Products</h1>
+            <div class="container1">
+                <div class="container">
                     <img src="img/ice candy salad.jpg">
-                    <a href="#" class="t-btn">INGREDIENTS</a>
-                    <p class="caption1">Salad Ice Candy</p>
+                    <div class="box">
+                        <h3>Salad Ice Candy</h3>
+                        <p>Flavor : Salad</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
+                    </div>
                 </div>
-    
-                <div class="box3">
-                    <img src="">
-                    <a href="#" class="t-btn">INGREDIENTS</a>
-                    <p class="caption1">Mango Graham Ice Candy</p>
+                <div class="container">
+                    <img src="img/turon .jpg">
+                    <div class="box">
+                        <h3>Kamote - Saging Turon</h3>
+                        <p>Inside the wrapper is a filling of half Kamote and half Saging</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="img/ice candy salad.jpg">
+                    <div class="box">
+                        <h3>Mango Graham Ice Candy</h3>
+                        <p>Flavor : Mango Graham</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,8 +99,6 @@
                 </ul>
             </div>
             <div class="fo-right-info">
-                <h1>Reviews</h1>
-                <br>
                 <ul class="fo-ul">
                     <li class="fo-li">Add as many bullets as you need</li>
                     <li class="fo-li">Add as many bullets as you need</li>
@@ -172,24 +182,45 @@
             </div>
         </div>
     </div>
-    <div id="si-div" class="si-div">
-
-        <div class="logos">
-            <img src="img/logo.png"><h1 class="logo">Delicioso Turon Pares</h1>
-        </div>
-
-        <div class="si-container">
-            <div class="cntr-cntc">
-                <h2>Contact Details</h2>
-                <p class="f-cntc"><i class="fa-solid fa-location-dot"></i> Marigondon National High School in Marigondon, Lapu-Lapu City, Cebu, Philippines</p>
-                <p class="s-cntc"><i class="fa-solid fa-phone"></i> +63919 816 4512<br> jandaevelouis1234@gmail.com</p>
+    <div id="si-div">
+        <div class="si-div">
+            <div class="row">
+                <div class="si-container-left">
+                    <h1 class="caption">Contact Us</h1>
+                    <p><i class="fa-solid fa-location-dot"></i> Marigondon National High School in Marigondon, Lapu-Lapu City, Cebu, Philippines</p>
+                    <p class="s-cntc"><i class="fa-solid fa-phone"></i> +63919 816 4512</p> <p><i class="fa-regular fa-envelope"></i>jandaevelouis1234@gmail.com</p>
+                    <div class="socials">
+                        <h3>Follow Us</h3>
+                        <a href="https://www.facebook.com/profile.php?id=100093167439839"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="si-container-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="MEssage" rows="6" placeholder="Your Order with Address for delivery"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div> 
             </div>
         </div>
-        <div class="socials">
-            <h3>Follow Us</h3>
-            <a href="https://www.facebook.com/profile.php?id=100093167439839"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-            <p class="footer"><i class="fa-regular fa-copyright"></i>Delicioso Turon Pares</p>
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i>Delicioso Turon Pares</p>
         </div>
+    </div>
+
+        <script>
+
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+
+        </script>
 </body>
 </html>

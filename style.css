@@ -2,46 +2,57 @@
     padding: 0;
     margin: 0;
     font-family: serif, sans-serif;
-    
-    /*border: 1px solid red;*/
+
+   /*border: red solid 1px;*/
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-body{
-    font-size: 25px;
-}
-
-.f-div{
+#f-div{
     background: rgb(45, 22, 6);
     width: 100%;
 }
 
+.f-div{
+    padding: 10px 10%;
+}
+
 nav{
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 385px;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    position: fixed;
-    top: 0;
-    background-color: rgb(230, 230, 230);
-    width: 100%;
 }
 
-nav .f-ul .f-li{
+nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px;
+    margin: 10px 20px;
+    padding-left: 65px;
 }
 
-nav .f-ul .f-li a{
-    color: #000;
+nav ul li a{
+    color: #fff;
     text-decoration: none;
     font-size: 20px;
     position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: .4s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
 }
 
 .home h1{
@@ -64,7 +75,7 @@ nav .f-ul .f-li a{
 .home img{
     width: 400px;
     display: block;
-    padding-left: 470px;
+    margin-left: 470px;
 }
 
  /*need hover*/
@@ -160,6 +171,10 @@ nav .f-ul .f-li a{
 }
 
 /*third div*/
+#t-div{
+    padding: 50px 0;
+}
+
 .t-div{
     background: rgb(45, 22, 6);
     width: 100%;
@@ -167,16 +182,51 @@ nav .f-ul .f-li a{
 }
 
 .container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;  
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden; 
 }
     
 .container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.container img{
+    width: 90%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.box{
+    width: 91%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 14px;
+    transition: transform 0.5s;
+    transition: height 0.5s;
+}
+
+.box h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 25px;
 }
 
 .caption{
@@ -186,23 +236,40 @@ nav .f-ul .f-li a{
     align-items: center;
     font-size: 70px;
 }
-    
-.box1,.box2,.box3{
-    width: 150px;
-    height: 200px;
-    margin-left: 70px;
-    padding: 65px;
-    margin-bottom: 20px;
-    /*padding-left: 150px;*/
+
+.box a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 60px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
 }
 
-.box1 img,.box2 img,.box3 img{
-    width: 300px;
+.box p{
+    color: #fff;
+    font-size: 25px;
+}
+
+.box a:hover{
+    background-color: #ff004f;
+    color: #fff;
+    transform: translateY(-10px);
+}
+
+.container:hover img{
+    transform: scale(1.1);
+}
+
+.container:hover .box{
+    height: 100%;
 }
 
 .t-btn{
     display: block;
-    margin-left: 25px;
+    margin-left: 45px;
     width: fit-content;
     border: 3px solid #ff004f;
     padding: 10px 45px;
@@ -219,7 +286,8 @@ nav .f-ul .f-li a{
 
 .caption1{
     color: #ff004f;
-    padding-left: 100px;
+    padding-left: 80px;
+    font-size: 40px;
 }
     
 /*fourth div*/
@@ -240,6 +308,10 @@ nav .f-ul .f-li a{
     float: left;
     margin-top: 30px;
     padding-left: 150px;
+}
+
+.fo-li{
+    font-size: 26px;
 }
 
 .fo-right-info{
@@ -263,14 +335,6 @@ nav .f-ul .f-li a{
     padding-bottom: 10px;
     color: #ff004f;
 }
-
-/*.up-info h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 25px;
-    padding-bottom: 50px;
-}*/
 
 .fi-container{
     display: flex;
@@ -315,60 +379,38 @@ hr{
 /*sixth div*/
 .si-div{
     background: #1F1A1A;
-    width: 100%;
-    height: 80vh;
+    padding: 10px 10%;
 }
 
-.logos img{
-    float: left;
-   width: 250px;
-   display: flex;
-   justify-content: flex-start;
-}
-
-.logos h1{
-    color: #fff;
-    font-size: 50px;
-}
-
-.si-container{
+.row{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.cntr-cntc{
-    padding-left: 400px;
-    /*padding-top: 20px;*/
+.si-container-left{
+    flex-basis: 35%;
+}
+
+.si-container-left p{
+    margin-top: 30px;
     color: #fff;
-}
-
-.cntr-cnt i{
     font-size: 20px;
 }
 
-.cntr-cntc h2{
-    padding-bottom: 25px;
-    font-size: 45px;
-}
-
-.f-cntc{
-    padding-bottom: 25px;
-    font-size: 20px;
-}
-
-.s-cntc{
-    padding-bottom: 25px;
-    font-size: 20px;
+.si-container-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
 }
 
 .socials{
-    padding-left: 480px;
-    color: #fff;
+    margin-top: 30px;
 }
 
 .socials h3{
     padding-bottom: 10px;
+    color: #fff;
 }
 
 .socials i{
@@ -376,11 +418,12 @@ hr{
 }
 
 .socials a{
-    color: #fff;
-    transition: 0.5s;
     text-decoration: none;
     font-size: 30px;
+    margin-right: 15px;
+    color: #fff;
     display: inline-block;
+    transition: transform .5s;
 }
 
 .socials a:hover{
@@ -388,13 +431,276 @@ hr{
     transform: translateY(-5px);
 }
 
-.footer{
-    color: #ff004f;
-    float: left;
-    padding-top: 80px;
-    padding-left: 555px;
+.btn.btn2{
+    display: inline-block;
+    background: #ff004f;
 }
 
-.footer i{
+.si-container-right{
+    flex-basis: 60%;
+}
+
+.si-container-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    resize: none;
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #ababab;
+    font-weight: 300;
+}
+
+.copyright p{
     font-size: 20px;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
+nav .fas{
+    display: none;
+    color: #fff;
+}
+
+/*for cp perspective to be finishes*/
+@media only screen and (max-width: 600px){
+    .home{
+        margin-top: 70px;
+        font-size: 16px;
+    }
+    .home h1{
+        font-size: 30px;
+    }
+    nav #fas1{
+        padding-left: 95%;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: rgb(45, 22, 6);
+        position: fixed;
+        top: 0;
+        right: -220px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 20px;
+        margin-left: -30px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .fas{
+        cursor: pointer;
+    }
+    .home h1{
+        padding-top: 0px;
+        font-size: 40px;
+    }
+    .home img{
+        width: 150px;
+        display: block;
+        margin-left: 170px;
+    }
+    .f-btn{
+        display: block;
+        margin-left: 134px;
+    }
+    .right-info{
+        float: right;
+        height: 50%;
+        width: 80%;
+    }
+    .left-info h1{
+        padding-left: 115px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .f-p{
+        padding-left: 30px;
+        font-size: 16px;
+    }
+    .s-p{
+        padding-left: 40px;
+        font-size: 16px;
+    }
+    .t-p{
+        padding-left: 46px;
+        font-size: 16px;
+    }
+    .fo-p{
+        padding-left: 65px;
+        font-size: 16px;
+    }
+    .fi-p{
+        padding-left: 79px;
+        font-size: 16px;
+    }
+    .si-p{
+        padding-left: 69px;
+        font-size: 16px;
+    }
+    .se-p{
+        padding-left: 70px;
+        font-size: 16px;
+    }
+    .s-btn{
+        margin-left: 150px;
+    }
+    .s-div{
+        height: 95vh;
+    }
+    .t-div{
+        height: auto;
+    }
+    .fo-left-infos{
+        margin-top: 0px;
+        padding-left: 120px;
+    }
+    
+    .fo-li{
+        font-size: 20px;
+    }
+    
+    .fo-right-info{
+        float: right;
+        margin-top: 10px;
+        padding: 5px 0;
+        padding-right: 105px;
+    }
+    .fo-div{
+        height: 70vh;
+    }
+    .up-info h1{
+        padding-top: 35px;
+    }
+    .fi-container{
+        display: block;
+    }
+    .fi-sect{
+        border: #fff solid 5px;
+        background-color: #fff;
+        margin: 20px;
+        padding: 20px;
+        border: 10px 0;
+    }
+    .fi-sect img{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 70px;
+    }
+    
+    .logos img{
+        float: left;
+       width: 150px;
+       display: flex;
+       justify-content: flex-start;
+    }
+    
+    .logos h1{
+        color: #fff;
+        font-size: 25px;
+        padding-top: 50px;
+        padding-left: 160px;
+    }
+    
+    .si-container{
+        display: block;
+        float: left;
+    }
+    
+    .cntr-cntc{
+        display: inline-flex;
+    }
+    
+    .cntr-cnt i{
+        font-size: 20px;
+    }
+    
+    .cntr-cntc h2{
+        padding-bottom: 15px;
+        font-size: 25px;
+    }
+    
+    .f-cntc{
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+    
+    .s-cntc{
+        padding-bottom: 25px;
+        font-size: 20px;
+    }
+    
+    .socials{
+        padding-left: 0px;
+        color: #fff;
+    }
+    
+    .socials h3{
+        padding-bottom: 10px;
+    }
+    
+    .socials i{
+        padding: 5px;
+    }
+    
+    .socials a{
+        color: #fff;
+        transition: 0.5s;
+        text-decoration: none;
+        font-size: 30px;
+        display: inline-block;
+    }
+    
+    .socials a:hover{
+        color: rgb(34, 34, 207);
+        transform: translateY(-5px);
+    }
+    
+    .footer{
+        color: #ff004f;
+        float: left;
+        padding-top: 80px;
+        padding-left: 555px;
+    }
+    
+    .footer i{
+        font-size: 20px;
+    }
 }
