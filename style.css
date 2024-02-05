@@ -76,13 +76,12 @@ nav ul li a:hover::after{
 .home img{
     width: 400px;
     display: block;
-    margin-left: 470px;
+    margin-left: 650px;
 }
 
- /*need hover*/
 .f-btn{
     display: block;
-    margin-left: 550px;
+    margin-left: 730px;
     width: fit-content;
     border: 3px solid rgb(255, 171, 2);
     padding: 14px 50px;
@@ -179,7 +178,7 @@ nav ul li a:hover::after{
 .t-div{
     background: rgb(45, 22, 6);
     width: 100%;
-    height: 120vh;
+    height: 100vh;
 }
 
 .container{
@@ -236,6 +235,7 @@ nav ul li a:hover::after{
     justify-content: center;
     align-items: center;
     font-size: 70px;
+    padding-top: 80px;
 }
 
 .box a{
