@@ -76,12 +76,12 @@ nav ul li a:hover::after{
 .home img{
     width: 400px;
     display: block;
-    margin-left: 500px;
+    margin-left: 470px;
 }
 
 .f-btn{
     display: block;
-    margin-left: 500px;
+    margin-left: 550px;
     width: fit-content;
     border: 3px solid rgb(255, 171, 2);
     padding: 14px 50px;
