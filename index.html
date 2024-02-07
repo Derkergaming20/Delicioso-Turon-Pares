@@ -4,234 +4,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <title>Dexter Portfolio</title>
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/feb118aecb.js" crossorigin="anonymous"></script>
+    <title>Delicioso Turon Pares</title>
 </head>
 <body>
-    <!---Ribbon Start--->
-    <div id="header">
-        <div class="container">
+    <div id="f-div">
+        <div class="f-div">
             <nav>
-                <a href="#" class="logo"><span>Dex</span>ter</a>
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#f-div">Home</a></li>
+                    <li><a href="#s-div">About Us</a></li>
+                    <li><a href="#t-div">Products</a></li>
+                    <li><a href="#fo-div">Reviews</a></li>
+                    <li><a href="#fi-div">Our Team</a></li>
+                    <li><a href="#si-div">Contact Us</a></li>
                     <i class="fas fa-x" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                <i id="fas1" class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
-    <!---Quick summary about me--->        
-            <div class="header-text">
-                <h3>Web Developer <span>& Designer</span></h3>
-                <h1>Hi! I'm <span>Dexter Paul</span>,</h1>
-                <h2>I am the <span>Web Developer</span> that your looking for.</h2>
-            </div>
         </div>
-    </div>
-    <!---About section Start--->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="img/front.png">
-                </div>
-                <div class="about-col-2">
-                    <h1 class="sub-title">About me</h1>
-                    <p>I am a Front-end web developer. I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animation. A responsive design makes your website accessible to all users, regardless of their device.</p>
-                    <!---Skills section--->
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                    </div>
 
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>UI Design</span><br>Web Designing</li>
-                            <li><span>Web Development</span><br>Web template design</li>
-                        </ul>
+        <div class="home">
+            <h1>Delicioso Turon Pares</h1>
+            <p>"A Taste You"ll Never Forget"</p>
+            <img src="img/logo.png">
+        </div>
+            
+        <a href="#t-div" class="f-btn">SEE PRODUCTS</a>
+    </div>
+
+    <div id="s-div" class="s-div">
+
+        <div class="left-info">
+            <h1 class="sh-descript">About Us</h1>
+            <img class="right-info" src="img/alphakapaturon2.jpg">
+            <p class="f-p">Our business, "Delicioso Turon Pares", is a student-run kamote-saging</p>
+            <p class="s-p"> turon shop partnered with an ice candy stand. We aim to provide </p>
+            <p class="t-p"> delicious and affordable kamote turon and refreshing ice candy</p>
+            <p class="fo-p"> to customers in the Philippines. Our goal is to establish</p>
+            <p class="fi-p"> Delicioso Turon Pares as a popular snack to eat,</p>
+            <p class="si-p"> offering a unique combination of kamote-saging turon</p>
+            <p class="se-p"> and ice candy to cater to the preferences of students</p>
+
+            <a href="#fi-div" class="s-btn">OUR TEAM</a>
+        </div>
+    </div>
+
+    <div id="t-div">
+        <div class="t-div">
+            <h1 class="caption-1">Products</h1>
+            <div class="container1">
+                <div class="container">
+                    <img src="img/ice candy salad.jpg">
+                    <div class="box">
+                        <h3>Salad Ice Candy</h3>
+                        <p>Flavor : Salad</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
                     </div>
-                    <!---Experiences section--->
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <!---change-into-something--->
-                            <li><span>2023 - Current</span><br>Hardware and Software Technician at <span>CITE</span></li>
-                            <li><span>2022 - 2023</span><br>Web Development at <span>Marigondon NHS</span></li>
-                        </ul>
+                </div>
+                <div class="container">
+                    <img src="img/turon .jpg">
+                    <div class="box">
+                        <h3>Kamote - Saging Turon</h3>
+                        <p>Inside the wrapper is a filling of half Kamote and half Saging</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
                     </div>
-                    <!---Education section--->
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <!---change-into-something--->
-                            <li><span>2023 - Current</span><br>Computer Engineering at <span>Center for Industrial Technology and Enterprise</span></li>
-                            <li><span>2023 - 2024</span><br>Microsoft Youth Ambassador 2.0</li>
-                            <li><span>2021 - 2023</span><br>Computer System and Servicing at <span>Marigondon National High School</span></li>
-                        </ul>
+                </div>
+                <div class="container">
+                    <img src="img/ice candy salad.jpg">
+                    <div class="box">
+                        <h3>Mango Graham Ice Candy</h3>
+                        <p>Flavor : Mango Graham</p>
+                        <a href="#">INGREDIENTS</a>
+                        <a href="#si-div">ORDER NOW</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!---Services section start---> <!---Need to be edit--->
-    <div id="services">
-        <div class="container">
-            <h1 class="sub-title">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Web Development</h2>
-                    <p>As a web developer, I am ensuring that the websites I create are user-friendly, visually appealing, and meet the specific requirements of my clients or users.</p>
-                    <a href="#contact">Let's Talk</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2>UI Design</h2>
-                    <p>As a UI designer, is to create beautiful, functional, and user-friendly interfaces that make the product a pleasure to use.</p>
-                    <a href="#contact">Let's Talk</a>
-                </div>
-                <div>
-                    <i class="fa-solid fa-box"></i>
-                    <h2>Custom Package</h2>
-                    <p>As a UI Designer and Web Developer, I am ensuring that the UI Design is being created beautifully and the Websites I create are user-friendly, visually appealing, and meet the specific requirements of my clients or users.</p>
-                    <a href="#contact">Let's Talk</a>
-                </div>
+    <div id="fo-div" class="fo-div">
+        <div class="fo-left-info">
+            <div class="fo-left-infos">
+                <h1>Reviews</h1>
+                <br>
+                <ul class="fo-ul">
+                    <li class="fo-li">This is my first time eating turon with 2 flavors inside <br>-Student1</li>
+                    <li class="fo-li">Turon and Ice Candy is a wonderful combination <br> -Teacher1</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                </ul>
+            </div>
+            <div class="fo-right-info">
+                <ul class="fo-ul">
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                    <li class="fo-li">Add as many bullets as you need</li>
+                </ul>
             </div>
         </div>
     </div>
-<!---Portfolio---skipped on progress--->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Works</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="img/lawyer.png">
-                    <div class="layer">
-                        <h3>Lawyers Website</h3>
-                        <p>A website that can visit your future clients to be your lawyer.</p>
-                        <a href="https://derkergaming20.github.io/Lawyer-Website-Sample/">Live Demo</a>
-                        <a href="#contact">Learn More</a>
-                    </div>
-                </div>
-                <!---unknown-need-edit--->
-                <div class="work">
-                    <img src="">
-                    <div class="layer">
-                        <h3></h3>
-                        <p></p>
-                        <a href="https://derkergaming20.github.io/Delicioso-Turon-Pares/">Live Demo</a>
-                        <a href="#contact">Learn More</a>
-                    </div>
-                </div>
-                <!---unknown-need-edit--->
-                <div class="work">
-                    <img src="">
-                    <div class="layer">
-                        <h3></h3>
-                        <p></p>
-                        <a href="#">Live Demo</a>
-                        <a href="#contact">Learn More</a>
-                    </div>
-                </div>
+    <div id="fi-div" class="fi-div">
+        <div class="up-info">
+            <h1>Our Team</h1>
+        </div>
+
+        <div class="fi-container">
+            <div class="fi-sect">
+                <img src="img/aliza.png">
+                <hr>
+                <h4>Aliza Rondina <br> - Founder / CEO</h4>
             </div>
-            <a href="https://github.com/Derkergaming20" class="btn">See More</a>
+        </div>
+
+        <div class="fi-container">
+            <div class="fi-sect">
+                <img src="img/rena.png">
+                <hr>
+                <h4>Rena Maloloy-on <br> - Finance / Customer Service</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/gracel.png">
+                <hr>
+                <h4>Gracel Compra <br> - Operational Management</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/carol.png">
+                <hr>
+                <h4>Carol Faye Moralde <br> - Finance / Sales</h4>
+            </div>
+        </div>
+
+        <div class="fi-container">
+            <div class="fi-sect">
+                <img src="img/daeve.png">
+                <hr>
+                <h4>Jan Daeve Nuñez <br> - Operational Management</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/dexter.png">
+                <hr>
+                <h4>Dexter Paul Tingal <br> - Marketing</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/stephane.png">
+                <hr>
+                <h4>Stephane Jun Gadiano <br> - Marketing</h4>
+            </div>
+        </div>
+
+        <div class="fi-container">
+            <div class="fi-sect">
+                <img src="img/messiah.png">
+                <hr>
+                <h4>Messiah Bermudez <br> - Sales</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/dominic.png">
+                <hr>
+                <h4>Dominic Batiquin <br> - Sales</h4>
+            </div>
+
+            <div class="fi-sect">
+                <img src="img/diogenes.png">
+                <hr>
+                <h4>Diogenes Coronel <br> - Sales</h4>
+            </div>
         </div>
     </div>
-<!---Contact--->
-    <div id="contact">
-        <div class="container">
+    <div id="si-div">
+        <div class="si-div">
             <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i>paulmedia58@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>09662488576</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/DexterTingal24/"><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://discord.com/users/614045824074383370"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://github.com/Derkergaming20"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.freecodecamp.org/Dexterpaul"><i class="fa-brands fa-free-code-camp"></i></a>
-                    </div>
-                    <div class="social-names">
-                        <p class="fb" style="padding-right: 5px;">Facebook</p>
-                        <p class="ig" style="padding-right: 5px;">Instagram</p>
-                        <p class="dc" style="padding-right: 10px;">Discord</p>
-                        <p class="gh" style="padding-right: 10px;">Github</p>
-                        <p class="fcc" style="padding-right: 5px;">FreeCodecamp</p>
+                <div class="si-container-left">
+                    <h1 class="caption-2">Contact Us</h1>
+                    <p><i class="fa-solid fa-location-dot"></i> Marigondon National High School in Marigondon, Lapu-Lapu City, Cebu, Philippines</p>
+                    <p class="s-cntc"><i class="fa-solid fa-phone"></i> +63919 816 4512</p> <p><i class="fa-regular fa-envelope"></i>jandaevelouis1234@gmail.com</p>
+                    <div class="socials">
+                        <h3>Follow Us</h3>
+                        <a href="https://www.facebook.com/profile.php?id=100093167439839"><i class="fa-brands fa-facebook"></i></a>
                     </div>
                 </div>
-                <div class="contact-right">
+                <div class="si-container-right">
                     <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea type="MEssage" rows="6" placeholder="Your Order with Address for delivery"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
                     <span id="msg"></span>
-                </div>
+                </div> 
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © Dexter. Made <i class="fa-solid fa-heart"></i> by Dexter Paul Tingal</p>
+            <p><i class="fa-regular fa-copyright"></i>Delicioso Turon Pares</p>
         </div>
     </div>
 
+        <script>
 
-<!---javascript for normal website--->
-<script>
+            var sidemeu = document.getElementById("sidemenu");
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-    
-    function opentab(tabname){
-        for(tablink of tablinks){
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents){
-            tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
 
-</script>
-
-<!---javascript for cp website--->
-<script>
-
-    var sidemeu = document.getElementById("sidemenu");
-
-    function openmenu(){
-        sidemeu.style.right = "0";
-    }
-    function closemenu(){
-        sidemeu.style.right = "-200px";
-    }
-
-</script>
-
-<!---script for contact--->
-  <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbz98AzUjO3AIsfPQ6b24pKzAkvWkwnOn2Rr_6-2VB_fsd4UWyznIha2TwxYNGe7nOnucA/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message Sent Successfully"
-            setTimeout(function(){
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-
+        </script>
 </body>
 </html>
